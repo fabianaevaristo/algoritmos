@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <script>
+        /*
+        detalhes do starcase
+        essa é uma starcase de tamanho 4
+           #
+          ##
+         ###
+        ####
+
+        a altura e a base medem n e é desenhada usando # e espaços
+        a ultima linha nao possui espaços
+        
+        escreva um programa que desenhe uma escada de tamanho n
+
+        Function Description
+
+        escreva a funçao staircase
+
+        com o parametro:
+
+        int n: um inteiro
+
+        Return
+
+        desenhe a escada descrita acima
+
+        Input Format
+
+        um unico inteiro, n , deteminando o tamanho da escada.
+
+        Output Format
+
+        desenhe a escada usando # e espaços
+
+        Note: a ultima linha nao possui espaços.
+        */
+       function staircase(n){
+           var degrau = 1;  // degrau recebendo 1
+           while(degrau<=n){ // enquanto degrau for menor ou igual a n
+               var espaco = n-degrau; // espaço recebe n (tamanho da escada) menos o degrau
+               var msg = ''; // messagem recebe vazio
+
+               for(var i = 0; i < espaco; i++){ // para i sendo 0 repita enquanto i for menor que espaços
+                    msg+= ' '; // mensagem recebe espaço
+                }
+
+                for(var i = 0; i < degrau; i++){ // repita enquanto i for menor que degraus 
+                    msg+= '#'; // mensagem recebe #
+                }
+
+                console.log(msg); // imprima mensagem
+                degrau++; // degrau recebe + 1
+           }
+       }
+    </script>
+</body>
+</html>

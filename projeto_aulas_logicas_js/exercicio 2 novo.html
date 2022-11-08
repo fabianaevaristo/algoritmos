@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1 - 02. Crie uma função que recebe um array de 3 números e coloque eles em ordem crescente. Crie sua própria função para isso.
+ 
+ */
+    function crescente(elementos){
+            elementos =  posicao1(elementos)
+
+        if (elementos[1] > elementos[2]){
+            const receber = elementos[2];
+            elementos[2] = elementos[1];
+            elementos[1] = receber;
+        }
+        
+        elementos =  posicao1(elementos)
+       
+
+        return elementos;  
+    }
+
+    function posicao1(elementos){
+        if (elementos[0] > elementos[1]){
+            const receber = elementos[1];
+            elementos[1] = elementos[0];
+            elementos[0] = receber;
+        }
+        return elementos
+
+    }
+
+    console.log(crescente([5,10, 9]))
+    console.log(crescente([50, 8, 12]))
+
+
+
+
+
+
+    </script>
+</body>
+</html>

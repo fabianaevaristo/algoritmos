@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   39.Escreva um programa que calcula o desconto previdenciário de um funcionário.
+    Dado um salário, o programa deve retornar o valor do desconto proporcional ao mesmo.
+    O cálculo segue a regra: o desconto é de 11% do valor do salário, entretanto, o valor máximo de desconto é 334,29, 
+    o que seja menor.
+    */
+    function previdencia(salario){
+
+    const descontoSalario = (salario * 11) / 100; 
+    console.log(descontoSalario)
+
+    let desconto = '';
+
+    if(descontoSalario > 334.29){
+        desconto = `o desconto será de R$ 334,29`
+    }else{
+        desconto = `O desconto será de ${descontoSalario}`
+    }
+    return desconto;
+    
+}
+
+    console.log(previdencia(1000))
+    
+   </script>
+</body>
+</html>

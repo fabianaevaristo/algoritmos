@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   31. Escreva um programa que leia um número e exiba se ele é positivo ou negativo.
+ 						
+*/
+
+    function positivoNegativo(num){
+
+        // //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
+        //Math.sign(x)           A função Math.sign() retorna o sinal de um número, indicando se o número é positivo, negativo ou zero.
+        if(num < 0){
+            return ` O número ${num} é: negativo`
+        }if(num > 0){
+            return `O número ${num} é: positivo`
+        }else{
+            return `O número ${num} é: Igual a zero`
+        }
+
+        }
+
+        console.log(positivoNegativo(9))
+        console.log(positivoNegativo(-2))
+        console.log(positivoNegativo(0))
+
+    
+
+    
+   </script>
+</body>
+</html>

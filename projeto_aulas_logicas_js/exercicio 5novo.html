@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    05. Faça uma função que recebe um array de qualquer tamanho e ordene seus elementos na ordem crescente. 
+    Faça sua função na mão, não invoque nenhum método de sorting. Dica: pesquise sobre bubble sort.
+    
+
+ */
+    function bubbleSort(elementos){
+        let temporal; //variável para receber dados temporariamente
+
+        for(let i = 0; i < elementos.length; i++){ 
+            for(let j = 0; j< elementos.length -(i - 1); j++){
+                if(elementos[j]>elementos[j+1]){
+                    temporal = elementos[j+1];
+                    elementos[j+1]=elementos[j];
+                    elementos[j] = temporal;
+                }
+            }
+        }
+        return elementos;
+    }
+
+    console.log(bubbleSort([15, 6 , 25 , 8 , 9, 1, 0, 2, 3]))
+    
+           
+
+
+
+
+
+    </script>
+</body>
+</html>

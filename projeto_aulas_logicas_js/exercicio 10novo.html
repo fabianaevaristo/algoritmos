@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aprendendo Javascript</h1>
+    <hr>
+
+    <p id="teste"> </p>
+
+    <script>
+        // 09. Peça ao usuário uma quantidade de linhas e e outra de colunas, depois declare tal matriz,  
+        //inicialize todos os elementos de 1 até 'linha x coluna'.
+        
+        function matriz(linha, coluna){
+            const notas = [] 
+            for(i=0; i<linha; i++){
+                notas.push([]);
+                for(j=0; j<coluna; j++){
+                notas[i].push(j+ i*coluna);
+                }
+            } 
+            return notas;     
+        }
+
+        console.log(matriz(2,4))
+
+
+
+        //const notas = [5, 6, 4] //[4, 3, 2]] //matriz de 2 linhas e 3 colunas
+            
+
+        /*console.log(notas);
+        console.log(notas[0]);
+        console.log(notas.length); //tamanho da matriz
+        console.log(notas[notas.length - 1]); //para saber o ultimo item quando não sabemos o tamanho da Arry e não informamos o indice.
+        notas.push(9)//acrescenta um elemento no final do arry(matriz)
+        notas[notas.length] = "aluno"; //outra maneira de acrescentar um item;
+        console.log(notas);
+
+        console.log(Array.isArray(notas)); //para saber se essa váriavel é uma matriz. (isrray pergunta se é uma arry)
+                                            //se sim true, se não false;
+
+        //métodos da matriz(arry)
+
+        /*Método Pop - Remover último item
+        Metodo Push - Adicionar um item no fim
+        Método Shift - Remover primeiro item
+        Método Unshift - Adicionar um item no começo
+        Método Delete - remove e informa undefined
+        Método Splice - adicionar multiplo valores, */
+
+        //notas.splice(posição que deseja colocar, se deseja deleta, o que vai acrescentar)
+
+        /*Método Concat - junta duas matriz
+        sempre cria uma nova váriavel, uma nova matriz vazia (const).
+        funsão de matriz:
+
+        ex:  const lista1 = ["arroz", "feijão", "leite"];
+             const lista2 = ["suco"]
+             const superLista = lista1.concat(lista2);
+             console.log(superlista);  junta as duas matrizes, ou quantas quiser
+
+        Método Slice - cortar um pedaço, valer uma parte especifica
+
+        notas.slice(posição inicial e a possição final, a posição final não é mostrada) ele coloca da posição escolhida para frente
+
+        Método Sort - mostra em ordem alfabetica, em texto
+        para deixar do Z para o A, primeiro faz em ordem alfabetica.
+        notas.sort();
+        depois faz:
+        notas.reverse();
+
+             Deixar Array em Ordem Numérica
+        numero na ordem crescente:
+        notas.sort(function (a,b) {return a - b}); para cada item da lista ele vai fazer uma comparação
+        
+        número na ordem decrescente:
+         notas.sort(function (a,b) {return b - a}); para cada item da lista ele vai fazer uma comparação
+
+   
+
+        crescente - 
+        Pegar o MAIOR número de um array
+            function MaiorNumero(arry) {
+                returno Math.max.apply(null, array);
+            }
+
+        Pegar o MENOR número de um array
+            function MenorNumero(arry) {
+                returno Math.min.apply(null, array);
+            }
+
+        Filtragem de números
+
+        ex: const numeros - [40, 100, 1, 5, 25, 10];
+        const maior20 = numeros.filter(filtragem);    filtragem é uma função, que vamos criar a baixo
+
+        function filtragem(value, index, array)
+            return value > 20;
+
+
+
+*/
+        
+        //document.getElementById("teste").innerHTML = notas.join(" * "); //para trocar o separador da matriz
+        //console.log(notas); //remove o primeiro item e automaticamente os items são reorganizado os indeci
+
+        //nota.shift();
+
+
+        /*function mostrar(){
+            const matriz = [ [1,2,3],
+                             [4,5,6],
+                             [7,8,9] ];
+
+                for(let lin=0 ; lin<3 ; lin++){
+                for(let col=0; col<3 ; col++)
+                document.write(matriz[lin][col] + "  ");
+                
+                document.write("<br />");
+                }
+
+}
+
+        console.log(mostrar); */
+
+    </script>
+        
+
+       
+    
+        
+    
+</body>
+</html>

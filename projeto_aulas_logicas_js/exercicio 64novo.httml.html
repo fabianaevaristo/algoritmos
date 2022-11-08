@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    64 -Um número se diz perfeito se é igual à soma de seus divisores próprios. 
+    Divisores próprios de um número positivo N são todos os divisores inteiros positivos de N 
+    exceto o próprio N. Por exemplo, o número 6, seus divisores próprios são 1, 2 e 3,
+     cuja soma é igual à 6 (1 + 2 + 3 = 6). Outro exemplo é o número 28, cujos divisores 
+     próprios são 1, 2, 4, 7 e 14, e a soma dos seus divisores próprios é 28 (1 + 2 + 4 + 7 + 14 = 28).
+ */
+    
+    function amigo(num1){
+        let contador = 0;
+        for(let i= 1; i < num1; i++){
+            if(num1%i==0){ //o resto da divisão de num por i igual a zero
+                contador+= i;
+            }
+            
+        }
+        if(contador == num1){
+            return 'perfeito'
+        }
+            return 'não perfeito'
+       
+        
+
+    }
+    
+        console.log(amigo(7))
+        
+    </script>
+</body>
+</html>

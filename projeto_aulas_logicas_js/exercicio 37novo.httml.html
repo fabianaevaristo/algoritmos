@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        http://netto.ufpel.edu.br/lib/exe/fetch.php?media=lista_de_exercicios3_solucao.pdf
+   36.Escreva um programa que leia 3 números e calcule a média ponderada entre eles. Considere que o maior número recebe peso 5 e os outros dois recebem peso 2,5.
+ 	média ponderada = 	peso multiplicando por cada valor e dividi pelo total de peso.				
+*/
+
+    function mediaPoderada(n1, n2, n3){
+        
+        //let num = [n1, n2, n3]
+        //const maiorValor = Math.max(n1, n2, n3)
+        //const maiorvalor2 = Math.max.apply(null, num)
+        //const maiorValor3 = Math(...num)
+        //const pesoMaior = (5 * maiorValor)
+        
+        let maior = n1;
+        if(n2 > maior){
+                maior = n2;
+            }
+             if(n3 > maior){
+                maior = n3;
+             }
+             return maior
+            
+        
+        
+
+            //return `O número maior é : ${maiorValor} o peso da nota maior é: ${pesoMaior}`
+    }
+ 
+   
+    
+    console.log(mediaPoderada(8, 10, 7.5))
+    
+   </script>
+</body>
+</html>

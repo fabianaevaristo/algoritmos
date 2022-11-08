@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+           /* 16. Ler dois números inteiros e exibir o quociente e o resto da divisão inteira entre eles.
+ */
+        function divisao(n1, n2){
+            const quociente = Math.trunc(n1 / n2)
+            const resto = n1 % n2
+            return [quociente, resto];
+        }
+
+        console.log(divisao(9, 2))
+        
+       // aqui como colocar para sempre ler um número inteiro?
+       //precisa explicar no problema a restrição, no caso que há tem queser maior que b?
+       //acrescentei o math.trunc para retira a casa decimal
+    </script>
+</body>
+</html>

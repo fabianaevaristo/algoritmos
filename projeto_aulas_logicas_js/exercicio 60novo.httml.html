@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    60 - A série de FETUCCINE é gerada da seguinte forma: os dois primeiros termos são fornecidos pelo usuário;
+     a partir daí, os termos são gerados com a soma ou subtração dos dois termos anteriores, ou seja:
+1. Ai = Ai-1 + Ai-2, para i ímpar 2. Ai=Ai-1-Ai-2,para ipar 
+Criar um algoritmo em PORTUGOL que imprima os N primeiros termos da série de FETUCCINE, 
+sabendo-se que para existir esta série serão necessários pelo menos três termos.
+ */
+
+        /* magem Postada Fetuccine (não encontro nada falando dele, só macarrão)
+
+É o seguinte... se o número for ímpar, ele faz a soma dos dois anteriores e, se for par, 
+faz a subtração. */
+
+// precisa de num1, num2  e a quantidade de termos
+
+    function fetuccine(num1, num2, vezes){
+      
+        let resultado = [];
+        resultado[0] = num1;
+        resultado[1] = num2;
+
+        for(i=3; i<vezes; i++){
+            if(i%2==0){
+                resultado[i-1] = resultado[i-2] - resultado[i-3];
+            }else{
+                resultado[i-1] = resultado[i-2] + resultado[i-3];
+            }
+        }
+        return resultado;       
+    }
+        console.log(fetuccine(20, 5, 7))
+        
+    </script>
+</body>
+</html>

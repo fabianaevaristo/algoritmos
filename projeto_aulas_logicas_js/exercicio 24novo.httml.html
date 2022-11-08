@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   24. Em uma cidade se deseja sincronizar os semáforos. Com isto, quando um semáforo abre (fica verde), 
+   os veículos que nele estavam parados tendem a encontrar os próximos semáforos também abertos. 
+   Para que isto seja feito, os próximos semáforos precisam abrir um pouco depois, 
+   dependendo da velocidade permitida na via e da distância entre eles. Assim, ao abrir o semáforo, 
+   um veículo começa a acelerar até atingir a velocidade permitida, que mantém até chegar ao próximo semáforo, 
+   levando um certo tempo para percorrer essa distância. Para que encontre o próximo semáforo aberto, 
+   este deve abrir um pouco antes da chegada do veículo (por ex: 3 segundos antes). 
+   Faça assim um algoritmo que informe quanto tempo depois um semáforo deve abrir, dada as seguintes informações:
+ 							
+        a distância desde o semáforo anterior		
+        a velocidade permitida da via
+        a aceleração típica dos carros
+ */
+
+        function sincronizacao(distancia, velocidadeConstante, aceleração){
+            let velocidadeInicial = 0;
+            const velocidadeMetroSeg = velocidadeConstante / 3.6 
+            const deslocamento20s = aceleração * (velocidadeInicial + velocidadeMetroSeg ** 2) / 2 ;
+            const distanciaFalta = (distancia - 100) - deslocamento20s;
+            const movimentoUnif200M = deslocamento20s / velocidadeMetroSeg;
+            const semáforoAbrir = velocidadeMetroSeg + movimentoUnif200M;
+            const movimentoUnif500M = distancia / velocidadeMetroSeg;
+            
+            return[velocidadeInicial, velocidadeMetroSeg + 'm/s', deslocamento20s + 'm', distanciaFalta + 'm', movimentoUnif200M + 's', semáforoAbrir + 's', movimentoUnif500M + 's']
+        }
+
+        console.log(sincronizacao(500, 72, 1))
+
+        //distancia é 500 metro, porém coloquei que o sinal deve abrir 100 metros antes para o carro não para sua aceleração constante
+
+    
+    
+    </script>
+</body>
+</html>

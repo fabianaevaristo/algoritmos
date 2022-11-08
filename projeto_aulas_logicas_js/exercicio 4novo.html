@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    04. Refaça o script anterior, mas agora pergunte ao usuário quantos números ele deseja inserir no array.
+    Depois, o usuário vai preenchendo elemento por elemento do vetor.
+    Ao final, exiba o array e o array ao contrário (generalização do script anterior).
+    
+
+ */
+    function inverter(elementos){
+        const inversoElemento = [];
+
+        for(let i = elementos.length - 1; i >= 0; i--){ 
+            inversoElemento.push(elementos[i]);
+        }
+        return inversoElemento;
+    }
+
+    console.log(inverter([15, 6 , 25 , 8 , 9, 1]))
+    
+           
+
+
+
+
+
+    </script>
+</body>
+</html>

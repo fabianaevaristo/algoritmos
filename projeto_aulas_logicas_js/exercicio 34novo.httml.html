@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   34. Escreva um programa que leia três números e mostre o maior entre eles.
+
+
+*/
+
+    function maior(num1, num2, num3){
+        let maior = num1;
+
+            if(num2 > maior){
+                maior = num2;
+            }
+             if(num3 > maior){
+                maior = num3;
+             }
+            
+
+     return `O número maior é : ${maior}`;
+
+    }
+
+    console.log(maior(9, 4, 8))
+
+    function maiorMenor(n1, n2, n3){
+        const max = Math.max(n1, n2, n3);
+        const min = Math.min(n1, n2, n3);
+        return `O número maior é : ${max} br
+        O número menor é : ${min}`
+    }
+
+    console.log(maiorMenor(10, 5, 7))
+    
+       
+    
+
+    
+   </script>
+</body>
+</html>

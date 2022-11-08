@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        Alice e bob criaram problemas para o hackerrank. Um usuario avaliou os dois desafios, numa escala
+        de 1 a 100 para 3 categorias: claridade do problema, originalidade e dificuldade.
+
+        A avaliacao do problema de alice é o array a = (a[0], a[1], a[2]), e a avaliacao de bob é 
+        o array de b = (b[0], b[1], b[2]).
+
+        a tarefa é comparar os seus pontos, comarando a[0] com b[0], a[1] com b[1] e a[2] com b[2].
+
+        Se a[i] > b[i], entao Alice ganha 1 ponto.
+        Se a[i] < b[i], entao Bob ganha 1 ponto.
+        Se a[i] = b[i], entao ninguem ganha ponto.
+        a Comparaçao dos pontos é a soma do total de ponts.
+
+        dado a e b, determine seus respectivos pontos.
+
+        exemplo
+
+        a = [1, 2, 3]
+        b = [3, 2, 1]
+        para os elementos na casa *0*, Bob ganha um ponto pois a[0] < b[0]
+        para os elementos a[1] e b[1], ninguem ganha pontos.
+        finalmente, para os elementos 2, a[2] > b[2] entao alice ganha 1 ponto.
+        o array retornado é [1, 1] sendo a pontuacao de Alice primeiro e a de Bobem segundo.
+
+        Function Description
+
+        escreva a funçao compareTriplets.
+
+        com os seguintes parametros:
+
+        int a[3]: avaliaçao de alice
+        int b[3]: avaliacao de bob
+
+        Return
+
+        int[2]: a pontuacao de alice na primeira casa e a pontuacaqo de bob na segunda casa
+        */
+
+        function compareTriplets(a,b){
+            var x = 0;
+            var somaDosPontos = [0,0];
+            while(a[x]){
+                if(a[x]>b[x]){
+                    somaDosPontos[0]++;    
+                }
+                if(a[x]<b[x]){
+                    somaDosPontos[1]++;
+                }
+                x++;
+            }
+            return somaDosPontos;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+</script>
+
+</html>

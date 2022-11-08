@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //
+        /* 
+    //scanf("%f %f", &x, &y);
+   41.Escreva um programa, que leia o número de passes tentados, o número de passes completos, 
+   o número de jardas passadas, o número de passes para touchdown e o número de passes interceptados e informe o QB Rating do quarterback.
+    */
+
+   function calculaValorReal(valor){
+    if(valor < 0){
+        valor = 0
+    }
+    if(valor > 2.375){
+        valor = 2.375
+    }
+    return valor
+   }
+    
+    function calculaRating(tentados, completos, jardas, touchdown, interceptados){
+        let valorParcial = ((completos/tentados) - 0.3) / 0.2
+        let rating = calculaValorReal(valorParcial)
+
+        valorParcial = ((jardas/tentados) - 3) / 4
+        rating += calculaValorReal(valorParcial)
+
+        valorParcial = (touchdown/tentados) / 0.05
+        rating += calculaValorReal(valorParcial)
+
+        valorParcial = ((interceptados/tentados) - 0.095) / 0.04
+        rating += calculaValorReal(valorParcial)
+
+        return rating * 100 / 6
+    }  
+
+    console.log(calculaRating(10, 9, 227, 1, 0))
+   </script>
+</body>
+</html>

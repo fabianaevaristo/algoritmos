@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet"> 
+        <!-- incluir o documento do javascript no html -->
+        <script src="beluga.js"></script>
+        <!--esse arquivo tem a função calcularMedia-->
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Leite de capivaris, leite de mula manquis sem cabeça.Aenean aliquam molestie leo, vitae iaculis nisl.Mé faiz elementum girarzis, nisi eros vermeio.</p>
+
+        </div>   
+
+        <script> 
+            
+            (function(){
+                'use strict'  
+
+                //essa variável(paragrafos) vai receber meus paragrafos pelo document. utilizado abaixo
+                var paragrafos = document.querySelectorAll('p');
+
+                //preciso percorrer cada um dos paragrafos para alterar o seu conteúdo ou seja a sua propriedade textContent 
+                var x = 0;
+                //enquanto existir paragrafo num indice x
+                while(paragrafos[x]){
+
+                    //abaixo vou fazer que cada um dos paragrafos tenha o textContent (=) esse sinal significa aqui alterado para alguma coisa! no caso alteral o valor de X e concatenar com o a frase, ex: essa pagina foi hackeada
+                    paragrafos[x].textContent = x + '- essa página foi hackeada por fulano';
+
+                    
+
+                    //nunca esquecer de somar mais 1 (++) para sair do loop
+                    x++;
+                }
+                
+                
+            })()
+            
+        </script>
+        
+    </body>
+</html>

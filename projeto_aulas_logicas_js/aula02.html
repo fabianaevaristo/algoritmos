@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Curso javascript Completo 2008</h1>
+
+    <input type="text" id="textNome" value="">
+    <button onclick = "exibirMensagem()"> Bem vindo </button>
+    <div class="notification" style="display:none" id="msgModal">
+        <button onclick="fecharMensagem()" class="delete" id="delete"></button>
+        <div id="msg"></div>
+      </div>
+
+    <script>
+        function exibirMensagem(){
+            const barNome = 'bar do luiz'
+            const nome = document.querySelector('#textNome').value;
+            const msg = document.querySelector('#msg');
+            document.querySelector('#msgModal').style.display = 'block';
+            //acento ``envolvendo toda a mensagem e para colocar a variável utiliza o ${} com nome da variável dentro ddas chaves
+            msg.innerHTML = `Bem Vindo, ${nome} ao ${barNome}`; 
+        }
+    
+    function fecharMensagem(){
+        
+        document.querySelector('#msgModal').style.display = 'none'; 
+        document.querySelector('#textNome').value = '';
+    }
+    </script>
+</body>
+</html>
+

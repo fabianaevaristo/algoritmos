@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    74 - Faça um programa em C que leia dois vetores de 10 posições de inteiros e copie o 
+maior valor dos dois em cada posição em um terceiro vetor. Em seguida, imprima este terceiro vetor.
+
+ */
+
+ function somaVetores(a, b){
+    let c = [];
+    for(let k = 0; k< 10; k++){
+        const Max = Math.max(...a);
+        c[k] = a[k];
+    }
+
+    return c; // return e retira o parseInt
+
+ }
+    console.log(somaVetores([2, 5, 2, 5, 6, 1, 2, 1, 2, 1 ,0], [2, 5, 2, 5, 6, 1, 2, 1, 2, 1 ,0]))
+ 
+    </script>
+</body>
+</html>

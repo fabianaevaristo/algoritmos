@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    46 - Em uma certificação são feitos são feitos 5 exames (I, II, III, IV e V). 
+    Escreva um programa que leia as notas destes exames e imprima a classificação do aluno, 
+    sabendo que a média é 70.
+    Classificação: 
+    A – passou em todos os exames;						
+    B – passou em I, II e IV, mas não em III ou V; 
+    C – passou em I e II, III ou IV, mas não em V. Reprovado – outras situações.
+
+    */
+
+    function classificaçao(I, II, III, IV, V){
+        
+
+        if(I >= 7 && II >= 7 && III >= 7 && IV >= 7 && V >= 7){
+            return 'passou em todos os exames';
+        }
+        if(I >= 7 && II >= 7 && IV >= 7 && (III < 7 || V < 7)){
+            return 'classificação B';
+        }
+        if (I >= 7 && II >= 7 && III >= 7 && V < 7){
+            return 'classificação C';
+        }
+            return 'reprovado';
+                
+        }
+
+        console.log(classificaçao( 7, 8 , 9 ,9, 7))
+
+    
+    
+   
+    
+   </script>
+</body>
+</html>

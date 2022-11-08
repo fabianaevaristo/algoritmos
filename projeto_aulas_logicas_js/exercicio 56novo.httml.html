@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    54 - Escreva um programa que calcule o resto da divisão de A por B (número inteiros e positivos),
+     ou seja, A % B, através de subtrações sucessivas. Esses dois valores são passados pelo usuário
+      através do teclado.
+    */
+
+    function restoDivisao(a, b){
+        let msg = '';
+    for(let i=a; i >= 0; i-=b){
+       if(i%b==0){
+           msg+= `[${i}]`
+       }else{
+           msg+= i;
+       }
+       msg+= ' '
+    }
+    return msg
+    }
+
+    console.log(restoDivisao(20, 6))
+
+    </script>
+</body>
+</html>

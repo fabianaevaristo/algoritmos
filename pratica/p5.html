@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var preco1 = prompt('digite um valor');
+        preco1 = parseFloat(preco1);
+
+        var preco2 = prompt('digite um valor');
+        preco2 = parseFloat(preco2);
+
+        var preco3 = prompt('digite um valor');
+        preco3 = parseFloat(preco3);
+
+        var menorValor = preco1;
+
+        if(menorValor>preco2){
+            menorValor = preco2;
+        }
+
+        if(menorValor>preco3) {
+            menorValor = preco3;
+        }
+
+        alert('o menor valor é: R$'+ menorValor);
+
+    /*if(preco1 < preco2 && preco1 < preco3){
+        alert('o menor valor é: R$'+ preco1);
+    }
+    if(preco2 < preco1 && preco2 < preco3){
+        alert('o menor valor é: R$'+ preco2);
+    }
+    if(preco3 < preco2 && preco3 < preco1){
+        alert('o menor valor é: R$'+ preco3);
+    }*/
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

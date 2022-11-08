@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   13. Dado o tamanho do raio de uma circunferência, calcular a área e o perímetro da mesma.
+
+ */
+    /*function perimetro(){
+    let base = parseFloat(prompt('base:'));
+    let altura = parseFloat(prompt('altura:'));
+    
+
+    Perimetro = 2 * base + 2 * altura;
+  
+    }
+    
+    console.log(perimetro) */
+
+    function perimetroCircunferencia(raio){
+        let pi = 3.14159;
+        const perimentroCumprimento = pi * raio * 2;
+        const area = pi * raio ** 2
+        return [perimentroCumprimento, area]
+    }
+
+    console.log(perimetroCircunferencia(5))
+
+    
+    </script>
+</body>
+</html>

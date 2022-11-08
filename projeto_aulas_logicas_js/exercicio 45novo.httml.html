@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    //scanf("%f %f", &x, &y);
+    44.Escreva um programa que leia um número inteiro de 1 a 7 e 
+    informe o dia da semana correspondente, sendo domingo o dia de número 1.
+    Se o número não corresponder a um dia da semana, mostre uma mensagem de erro.
+
+    */
+
+    dias = {
+    1: 'domingo',
+    2: 'segunda-feira',
+    3: 'terça-feira',
+    4: 'quarta-feira',
+    5: 'quinta-feira',
+    6: 'sexta-feira',
+    7: 'sábado'
+}
+    
+function diasSemana(num){
+        //return dias[num];
+
+    if (num > 7){
+        return `Erro`;
+    }else{
+        return dias[num];
+    }   
+
+}
+
+    console.log(diasSemana(5))
+    
+   
+    
+   </script>
+</body>
+</html>

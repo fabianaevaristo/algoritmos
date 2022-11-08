@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  https://www.youtube.com/watch?v=WYoVtrNgAaw
+
+    65 -O valor aproximado do número π pode ser calculado usando-se a série 𝑆=1−1+1−1+1... 
+    3! 5! 7! 9!						
+    Faça um programa que calcule e imprima o valor de π usando os N primeiros termos da série 
+    (N sendo informado durante a execução do algoritmo).
+
+ */
+
+ function seriePi(num){
+    let pi = 0;
+    let contador = 1;
+    for(let i = 1; i < num; i+=2){ //iniciar do 1 para chegar nos impares
+        pi += (1 / i ** 3) * contador;
+        contador = contador * (-1); // ** corresponde a potencia
+    }
+
+    return Math.cbrt(pi*32)
+    
+ }
+
+ console.log(seriePi(78))
+    
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   17. Solicitar a idade de uma pessoa em dias e informar na tela a idade em anos, meses e dias.
+
+
+ */
+    function converteIdade(idade){ //idades em dias 1000
+        const ano = Math.trunc(idade / 365);  //Math.trunc remove as casas decimais sem arrendodar
+            idade = idade - (ano * 365);
+        const meses = Math.trunc(idade / 30);
+            idade = idade - (meses * 30);
+            return [ano, meses, idade]
+    }
+
+    console.log(converteIdade(1009))
+      
+
+   
+    
+    </script>
+</body>
+</html>

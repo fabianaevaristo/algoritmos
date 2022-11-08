@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   33. Escreva um programa que leia um número e imprima se este número é ou não par.
+
+*/
+
+    function numeroPar(){
+        let numero = 0;
+        while(numero <= 20){
+            numero % 2 === 0 ? console.log(numero) : ""; //se isso for verdadeiro igual a zero
+            numero++; //vamos descobrir quantos números pares existe dentro do 20 
+        }
+    }
+
+        console.log(numeroPar(20)) //pq só mostra o resultado se eu colocar o parâmentro?
+                                  //porém mostra apenas o primeiro console
+
+    function par(){
+        let n = prompt("Digite um numero");
+        const total = n / 2;
+        const resultado = total % 2 == 0 ? 'Par' : 'Impar';
+        alert(total + ' é ' + resultado);
+        }
+       
+       
+    
+
+    
+   </script>
+</body>
+</html>

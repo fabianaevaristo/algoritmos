@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  https://www.youtube.com/watch?v=WYoVtrNgAaw
+
+    52 -Construa um programa que receba um número e verifique se ele é um número triangular.
+     (Um número é triangular quando é resultado do produto de três números consecutivos.
+      Exemplo: 24 = 2 x 3 x 4)
+ */
+
+    function triangulo(a, b, c){
+        let número = '';
+
+        if(a + b > c && a + c > b && b + c > a){
+            número = "É triângulo";
+        }else{
+            número = "Não é triângulo";
+        }
+        return número;
+    }
+
+    console.log(triangulo( 2, 3, 4))
+    
+ 
+    </script>
+</body>
+</html>

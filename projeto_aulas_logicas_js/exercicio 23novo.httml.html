@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   23. Um circuito elétrico é composto de duas resistências R1 e R2 em paralelo, 
+   e ambas em sequência de uma resistência R3. Faça um algoritmo para calcular a resistência equivalente desse circuito.
+
+
+ */
+
+    function eletrico(r1, r2, r3){
+       
+        const valorResistor = (r1 + r2 + r3) / 3
+        //const quantidadeResistores = [ r1, r2, r3]
+        /*let sum = 0;
+        for (let i = 0; i < quantidadeResistores. length; i++) { 
+            sum += quantidadeResistores[i]
+        }*/
+        const resistorTotal = valorResistor / 3;
+
+        return [, valorResistor,  resistorTotal]
+    }
+
+    console.log(eletrico(15, 15, 15))
+        
+    
+    </script>
+</body>
+</html>

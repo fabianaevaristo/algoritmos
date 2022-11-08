@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   40.Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+ 							
+Álcool Até 25 litros, desconto de 2% por litro 
+Acima de 25 litros, desconto de 4% por litro 
+Gasolina Até 25 litros, desconto de 3% por litro 
+Acima de 25 litros, desconto de 5% por litro							
+Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível 
+(codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que 
+o preço do litro da gasolina é R$ 2,70 e o preço do litro do álcool é R$ 1,90.
+
+ 						
+
+    */
+function postoCombustivel(l, tipoCombustivel){
+    tipoCombustivel = tipoCombustivel.toLowerCase();
+    let valorAPagar = 0;
+
+    if(tipoCombustivel == 'a'){
+        const alcool = (l * 1.90);
+
+        if(l <= 25){
+            valorAPagar = alcool - (alcool * 2) / 100;;
+        } else{        
+            valorAPagar = alcool - (alcool * 4) / 100;
+        }
+    } else {
+        const gasolina = (l * 2.70);
+        
+        if(l <= 25){
+            valorAPagar = gasolina - (gasolina * 3) / 100;
+        }else{
+            valorAPagar = gasolina - (gasolina * 5) / 100;
+        }
+    }
+    return valorAPagar
+
+}
+
+    console.log(postoCombustivel(10, 'A'))
+    console.log(postoCombustivel(10, 'a'))
+
+
+    
+
+
+   
+    
+   </script>
+</body>
+</html>

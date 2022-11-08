@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   08. Faça o mesmo do exercício anterior, mas com fatorial.
+Fatorial de 0: 0! = '
+Fatorial de 1: 1 x elemento0 = 1
+Fatorial de 2: 2 x elemento1 = 2
+Fatorial de 3: 3 x elemento2 = 3 x 2 = 6
+...
+Fatorial de n: n x elemento(n-1) = n x (n-1)! = n!
+ */
+    /* 
+    Função Procedural onde utilizamos um FOR
+    function fatorial(n){
+        let resutado = 1;
+
+        for(let i = n; i > 1; i-- ){ 
+            resutado = resutado * i
+        }
+        return resutado
+    }
+
+    console.log(fatorial(3))  */
+
+    // Função Recursiva, é uma função que chama ela mesmo
+
+    function fatorialRecursiva(n) {
+        if (n === 0) return 1; //se o número é 0 o fatorial é 1
+        if (n === 1) return 1; //se o número é 1 o fatorial é 1
+        return n * fatorialRecursiva(n-1); //para qualquer outro número o fatorial do número é o número
+                                            //*(vezes) o fatorial dele -(menos) 1
+    }
+    
+    console.log (fatorialRecursiva(8)); //posso chmar essa função sem o console
+
+    /*function fibonacci(n){
+        if (n === 1) return 1;
+        if (n === 2) return 2;
+        return fibonacci (n-1) + fibonacci (n-2); //finbonacci a soma dos dois números anteriores
+    }
+
+    console.log(fibonacci(9)) */
+
+    
+ 
+
+    </script>
+</body>
+</html>

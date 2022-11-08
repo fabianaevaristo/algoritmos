@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   36.Escreva um programa que leia 3 valores e escreva a soma dos 2 maiores.
+
+
+
+*/
+
+    function lerNum(n1, n2, n3){
+        const menorValor = Math.min(n1, n2, n3)
+        const somaMaiorValor = (n1 + n2 + n3) - menorValor  
+            return `O número menor é : ${menorValor} e a soma dos dois maiores é ${somaMaiorValor}`
+    }
+    
+    console.log(lerNum(3, 8, 15))
+    
+   </script>
+</body>
+</html>

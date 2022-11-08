@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function closestNumber(base, ar){
+            var x=1; // x recebe 1
+            var distanciaMaisProxima = ar[0] - base; // distanciaMaisProxima recebe primeira casa de ar menos- numero base
+
+            if(distanciaMaisProxima < 0) { // se distanciaMaisProxima for negativo
+                distanciaMaisProxima = distanciaMaisProxima * (-1) // transforma distanciaMaisProxima em positivo
+            }
+
+            var numeroMaisProximo= ar[0]  // numeroMaisProximo recebe primeira casa do array
+
+            while(ar[x]) {  // enquanto ar de x existir
+                distancia = ar[x] - base  // distancia recebe ar[x] menos base
+                if(distancia < 0) {  // se distancia for negativa
+                    distancia = distancia * (-1) // transforma distancia em positiva
+                }
+
+                if(distancia < distanciaMaisProxima) { // se a distancia for menor que distanciaMaisProxima 
+                    distanciaMaisProxima = distancia  // distanciaMaisProxima recebe a distancia
+                    numeroMaisProximo = ar[x]  // numeroMaisProximorecebe ar[x]
+                }
+                x++;  // x recebe mais 1
+            }
+
+            return numeroMaisProximo // retorna n
+        }
+
+    </script>
+</body>
+</html>

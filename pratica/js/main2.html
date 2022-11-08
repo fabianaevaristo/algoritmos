@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const inverter = (diaNormal) => {
+        let inverso = 0;
+
+    while (diaNormal !== 0){
+        const resto = diaNormal % 10;
+        inverso = inverso * 10 + resto; //3 
+        diaNormal = (diaNormal - resto) / 10; //2 
+    }
+    return inverso; 
+}
+
+const subtrair = (diaNormal, inverso) => {
+    let diferenca = diaNormal - inverso;
+    if (diferenca < 0) {
+        return diferenca * -1;
+    }
+    return diferenca;
+}
+
+const dividir = (difereca, k) => {
+    const resto = difereca % k;
+    return resto == 0;
+}
+
+const diaBonito = (dias, k) => {
+    let contador = 0;
+    dias.forEach(dia => {
+        const inverso = inverter(dia)
+        const diferenca = subtrair(dia, inverso);
+        const resto = dividir(diferenca, k);
+
+        if(resto){
+            contador++;  
+        }
+        
+    });
+    return contador;
+}
+
+dias = [24,25,26,27,28,29,30,31]
+k= 3
+console.log(diaBonito(dias, 54))
+
+    </script>
+</body>
+</html>

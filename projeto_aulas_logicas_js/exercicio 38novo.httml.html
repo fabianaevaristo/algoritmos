@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   38.Escreva um programa que leia uma letra e mostre se ela é vogal ou consoante.
+    */
+    function vogalConsoante(letra){
+
+     letra = letra.toLowerCase();
+     let classificacao = '';
+     
+    
+     if(letra =='a' || letra =='e' || letra =='i' || letra =='o' || letra =='u'){
+            classificacao =  ("É uma Vogal");
+        }else{    
+            classificacao  = ("É uma Consoante");
+    }
+        return classificacao
+
+}
+
+
+    console.log(vogalConsoante('r'))
+    
+   </script>
+</body>
+</html>

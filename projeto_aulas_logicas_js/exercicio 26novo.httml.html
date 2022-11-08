@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+   26. Escreva um programa para gerar o invertido de um número com três algarismos (exemplo: o invertido de 498 é 894).
+ 						
+*/
+    function inverteNum(arr){
+        arr.reverse();
+        return arr
+    }
+
+    console.log(inverteNum([4, 5, 6, 9, 81, 2 , 5]))
+    console.log(inverteNum([4, 9, 8]))
+
+
+
+    function numInvertido(num1){
+        const unidade = num1 % 10
+        const dezena = Math.trunc(num1 % 100) / 10
+        const centena = Math.trunc(num1 / 100)
+
+        const resultado = (unidade * 100) + (dezena * 10) + centena
+
+        return("O resultado da inversão é de : " + resultado);
+}
+
+    console.log(numInvertido(498)) // pq aqui o resultado da 902.98
+
+
+
+
+    var num1 = parseInt(prompt("Qual o numero?"));
+
+if (isNaN(num1)) {
+    alert('Você não digitou um número válido');
+} else {
+    var resultado = 0;
+    while (num1 > 0) {
+        resultado = 10 * resultado + num1 % 10;
+        num1 = Math.floor(num1 / 10);
+    }
+
+    alert("O resultado da inversão é: " + resultado);
+}
+
+//número negativo
+
+var num1 = parseInt(prompt("Qual o numero?"));
+
+if (isNaN(num1)) {
+    alert('Você não digitou um número válido');
+} else {
+    var negativo = false;
+    if (num1 < 0) {
+        negativo = true;
+        num1 = -num1;
+    }
+    var resultado = 0;
+    while (num1 > 0) {
+        resultado = 10 * resultado + num1 % 10;
+        num1 = Math.floor(num1 / 10);
+    }
+    if (negativo) {
+        resultado = -resultado;
+    }
+
+    alert("O resultado da inversão é: " + resultado);
+}
+    
+    
+    </script>
+</body>
+</html>

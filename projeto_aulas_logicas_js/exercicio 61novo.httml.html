@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    61 - Dado um país A, com 5.000.000 de habitantes e uma taxa de natalidade de 3% ao ano,
+     e um país B com 7.000.000 de habitantes e uma taxa de natalidade de 2% ao ano, escreva um 
+     programa, que imprima o tempo necessário para que a população do país A ultrapasse a população 
+     do país B.
+ */
+    
+    function natalidade(){
+        let tempo = 0;
+        let a = 5000000;
+        let b = 7000000;
+
+        while (a<b){
+            a+= a*0.03;
+            b+= b*0.02;
+            tempo++;
+        }
+        return tempo;
+    }
+
+        console.log(natalidade())
+        
+    </script>
+</body>
+</html>

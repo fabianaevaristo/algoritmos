@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            dado um array de inteiros, encontre a soma dos seus elementos
+
+            por exemplo: se o array ar = [1, 2, 3]
+
+            1 + 2 + 3 = 6, então retorne 6
+
+            === descriçao da funçao ===
+
+            escreva uma funçao simpleArraySum que retorne a soma de um array de elementos inteiros
+
+            parametros:
+            
+            ar : um array de inteiros
+
+            === formato de saida ===
+
+            imprima a soma dos elementos do array como um iunico numero inteiro
+        */
+
+        function simpleArraySum(ar){
+            var x = 0;
+            var somaDosNumeros = 0;
+            while(ar[x]){
+                somaDosNumeros += ar[x];
+                x++;
+            }
+
+            console.log(somaDosNumeros);
+            return somaDosNumeros;
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

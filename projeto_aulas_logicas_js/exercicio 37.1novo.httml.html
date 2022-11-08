@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+
+        https://guiatech.net/dart-exercicios-de-estruturas-condicionais/
+
+   36.Escreva um programa que leia 3 números e calcule a média ponderada entre eles. Considere que o maior número recebe peso 5 e os outros dois recebem peso 2,5.
+ 	média ponderada = 	peso multiplicando por cada valor e dividi pelo total de peso.				
+*/
+    function mediaPoderada1(n1, n2, n3){
+        let media = 0;
+
+        if(n1 > n2 &&  n1 > n3){
+            return media = ((n1*5) + (n2*2.5) + (n3*2.5)) / (5 + 2.5 + 2.5);
+        }else if(n2 > n1 && n2 > n3){
+            return media = ((n2*5) + (n1*2.5) + (n3*2.5)) / (5 + 2.5 + 2.5);
+        }else{
+            return media = ((n3 * 5) + (n1 * 2.5) + (n2 * 2.5)) / (5 + 2.5 + 2.5);
+        }
+    }
+
+    function mediaPoderada1(n1, n2, n3){
+
+        let media = 0;
+
+        const maiorValor = Math.max(n1, n2, n3)
+        const somaMenorValor = (n1 + n2 + n3) - maiorValor
+
+        media = maiorValor * 5 + somaMenorValor * 2.5
+
+        return media
+        
+    }
+
+    console.log(mediaPoderada1(8, 5, 9))
+    
+   </script>
+</body>
+</html>

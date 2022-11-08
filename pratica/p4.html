@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n1 = prompt('digite um número')
+        n1 = parseInt(n1);
+
+       var n2 = prompt('digite um número')
+        n2 = parseInt(n2);
+
+        var n3 = prompt('digite um número')
+        n3 = parseInt(n3);
+
+        if(n1>n2 && n1>n3){
+          if(n2>n3){
+              alert(n1 + '  ' + n2 + '  '+ n3);
+          } else{
+              alert( n1 + '  ' + n3 + '  '+ n2);
+          }
+
+        }
+
+        if(n2>n1 && n2>n3){
+          if(n1>n3){
+              alert(n2 + '  ' + n1 + '  '+ n3);
+          } else{
+              alert( n2 + '  ' + n3 + '  '+ n1);
+          }
+
+        }
+ 
+        if(n3>n2 && n3>n1){
+          if(n2>n1){
+              alert(n3 + '  ' + n2 + '  '+ n1);
+          } else{
+              alert( n3 + '  ' + n1 + '  '+ n2);
+          }
+
+        }
+
+
+
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

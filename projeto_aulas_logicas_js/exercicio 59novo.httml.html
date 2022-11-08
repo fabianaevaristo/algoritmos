@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    58 -A série de Fibonacci é formada pela sequencia: • 1,1,2,3,5,8,13,21,34,55,...
+
+Escreva um programa que gere a série de FIBONACCI até o N-ésimo termo
+ (com N sendo uma entrada do algoritmo).
+
+    */
+    
+    function gerarFibonacci(n){
+        fibonacci = [1]
+        if (n === 1) return fibonacci;
+        fibonacci = [1, 1]
+        if (n === 2) return fibonacci;
+        fibonacci = [1, 1, 2]
+        if(n == 3) return fibonacci;
+        
+        for(i=3; i< n; i++){
+            fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]
+        }
+        
+        return fibonacci (n-1) + fibonacci (n-2); //finbonacci a soma dos dois números anteriores
+    }
+    
+    console.log(gerarFibonacci(10))
+    </script>
+</body>
+</html>

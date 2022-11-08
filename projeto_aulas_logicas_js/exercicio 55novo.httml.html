@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    54 - Escreva um programa que leia dois números. Imprima a divisão inteira do primeiro pelo segundo,
+     assim como o resto da divisão. Utilize apenas os operadores de soma e subtração para calcular o resultado.
+    Lembre-se de que podemos entender o quociente da divisão de dois números
+    como a quantidade de vezes que podemos retirar o divisor do dividendo. Logo, 20 ÷ 4 = 5,
+    uma vez que podemos subtrair 4 cinco vezes de 20.
+    */
+
+   /* Multiplicação atraves de soma não possui mistério algum.
+
+Basta fazer uma rotina pra repetir quantas vezes que o valor será somado.
+
+Exemplo:
+    for ( i = 0; i < a; i++ )
+        soma += b; */
+    
+    /* 54 - Escreva um programa que calcule o quociente da divisão de A por B (número inteiros e positivos), 
+    ou seja, A / B, através de subtrações sucessivas. Esses dois valores são passados pelo usuário através do teclado.*/
+
+
+        /*function divisão(a, b){
+            num = 0;
+            const resto = a % b;
+
+            if ( a >= b){
+                a = (a - b);  //o dividendo vai receber dividendo - divisor
+                num = num + 1 // quociente recebe quociente - divisor
+                return [num, a]   
+            }
+        }
+
+        console.log(divisão(20, 4)) */
+
+        function subtraçõesSucessivas(a, b){
+        
+        let msg = '';
+        for(let i=a; i >= 0; i-=b){  
+        msg += i;
+        msg+= i==a ? ' = ' : ' - ';
+
+    }
+    return msg
+    }
+
+    console.log(subtraçõesSucessivas(20, 4))
+     
+
+    
+    </script>
+</body>
+</html>
