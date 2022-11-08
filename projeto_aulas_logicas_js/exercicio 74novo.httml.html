@@ -16,15 +16,15 @@ maior valor dos dois em cada posição em um terceiro vetor. Em seguida, impri
 
  function somaVetores(a, b){
     let c = [];
-    for(let k = 0; k< 10; k++){
-        const Max = Math.max(...a);
-        c[k] = a[k];
-    }
+    
+        c[0] = Math.max(...a);
+        c[1] = Math.max(...b);
+        
 
     return c; // return e retira o parseInt
 
  }
-    console.log(somaVetores([2, 5, 2, 5, 6, 1, 2, 1, 2, 1 ,0], [2, 5, 2, 5, 6, 1, 2, 1, 2, 1 ,0]))
+    console.log(somaVetores([2, 5, 2, 5, 7, 1, 2, 1, 50, 1 ,0], [2, 5, 2, 5, 6, 1, 2, 1, 2, 1 ,0]))
  
     </script>
 </body>
