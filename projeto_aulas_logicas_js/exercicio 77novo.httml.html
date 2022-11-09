@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        77 -Escreva um programa em C, que dada uma string (normalizada), imprima a maior palavra dela.
+
+
+ */
+
+function stringNormalize(texto){
+    
+        let i = 0;
+        //myArray = text.split(" ");
+        let myArray = texto.split(" "); // recortar o array nos espaço em branco
+        let maiorTamanho = 0;
+        let maiorPalavra = '';
+
+        while(myArray[i]){
+            if(myArray[i].length > maiorTamanho){ //verifica se a palavra atual tem o tamanho maior que a palavra guardada
+                
+                maiorTamanho = myArray[i].length; // pegando o tamanho da palavra
+               
+                maiorPalavra = myArray[i]; //guardando a palavra
+            }
+            i++;
+        }
+        return maiorPalavra
+}
+
+console.log(stringNormalize('casaco   é   de   Ana   Maria'))
+    </script>
+</body>
+</html>
